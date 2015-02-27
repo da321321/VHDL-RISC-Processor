@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+--LIBRARY altera_mf;
+--USE altera_mf.altera_mf_components.all;
+
+use work.ensc350_package.all;
+
+entity ensc350 is
+	port( clk, resetn: in std_logic;
+			iaddr_out: out std_logic_vector (iaddr_size-1 downto 0);
+			idata_in : in std_logic_vector (instr_size-1 downto 0);
+			
+			daddr_out :out std_logic_vector (daddr_size-1 downto 0);
+			ddata_in : in std_logic_vector (data_size-1 downto 0);
+			ddata_out: out std_logic_vector (data_size-1 downto 0);
+			
+			dmem_read, dmem_write : out std_logic));
+end ensc350;
+
+architecture arch_ensc350 of ensc350 is
+
+begin
+
+end arch_ensc350;
