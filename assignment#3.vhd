@@ -30,7 +30,7 @@ library IEEE;
 
   entity ubus is
     generic(signal_active : std_logic := '0';
-            addr_size : positive := 32; size : positive := 32;
+            addr_size : positive := 32; size : positive := 32; -- need to edit it to 16 bits
             s1_start  : Std_logic_vector := X"40001000";
             s1_end    : Std_logic_vector := X"40002000";
             s2_start  : Std_logic_vector := X"50000000";
