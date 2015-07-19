@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use work.ensc350_package.all;
+
+entity Dmem is
+	port( 
+			S1 : in std_logic_vector(3 downto 0); -- havent looked up the bits of it yet
+			-----------------
+			RB : in std_logic_vector(3 downto 0);-- 
+			Offset : in std_logic_vector(7 downto 0);
+			-------------
+			ddata_out, daddr_out: out std_logic_vector(data_size-1 downto 0)
+			); 
+end Dmem;
+
+architecture arch_Dmem of Dmem is
+
+begin
+
+end arch_Dmem;
